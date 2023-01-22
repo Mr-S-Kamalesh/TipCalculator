@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div id="outerBody">
+        <div><h1>TIP CALCULATOR</h1></div>
+        <div class="row">
+            <div class="innerBody col-6">
+                <div> How much was your bill?</div>
+                <input id="billamt" type="number" min="1" placeholder="Enter your bill amount">
+                <div>How was your service?</div>
+                <select id="serviceQual">
+                    <option>-- Choose an Option --</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.25">25% - Great</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was OK</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </div>
+            <div class="innerBody col-6">
+                <div>How many people are sharing the bill?</div>
+                <input id="peopleamt" type="number" min="1" placeholder="Enter number of people">
+                <button id="calculate" onclick="calc()">Calculate</button>
+                <h1 id="tip">TIP AMOUNT</h1>
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+    <h3>Copyright © 2022 Kamalesh</h3>
+</body>
+</html>
